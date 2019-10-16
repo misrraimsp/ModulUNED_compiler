@@ -1,0 +1,30 @@
+(* ERROR_sentCall5: llamada a procedimiento de ambito superior *)
+MODULE sentCall5;
+
+VAR x:integer;
+
+PROCEDURE proc1();
+
+	PROCEDURE proc2();
+	
+	BEGIN
+		
+		x:=x+1;
+		proc1;		(*error*)
+		
+	END proc2;
+	
+BEGIN
+	
+	writeint(x);
+	proc2;
+		
+END proc1;
+
+
+BEGIN
+
+	x:=0;
+	proc1;
+ 	
+END sentCall5;

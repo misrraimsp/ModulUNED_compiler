@@ -1,0 +1,6 @@
+(* ERROR_modName1: los nombres de inicio y final de ambito no coinciden *)
+MODULE name1;
+
+BEGIN
+
+END name2;

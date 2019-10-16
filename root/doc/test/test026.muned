@@ -1,0 +1,18 @@
+MODULE test026;
+
+VAR x:INTEGER;
+
+PROCEDURE imprime(VAR a:INTEGER);
+	
+BEGIN
+	
+	WRITEINT(a);
+		
+END imprime;
+
+BEGIN
+
+	x:=99;
+	imprime(x);
+ 	
+END test026;

@@ -1,0 +1,17 @@
+(* ERROR_exFun4: se usa como expresion la llamada a una funcion con argumentos actuales errados *)
+MODULE exFun4;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+
+PROCEDURE funcion (VAR a1:INTEGER; VAR b1:BOOLEAN):INTEGER;
+	BEGIN
+		RETURN 2;
+	END funcion;
+
+BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := funcion(int1,int2);	(*error*)
+ 	
+END exFun4;

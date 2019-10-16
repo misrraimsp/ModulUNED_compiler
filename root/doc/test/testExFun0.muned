@@ -1,0 +1,18 @@
+(* funcion que devuelve un tipo compuesto *)
+MODULE exFun0;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	b:BOOLEAN;
+
+PROCEDURE funcion (VAR a1:INTEGER; VAR b1:BOOLEAN):persona;	(*error*)
+	BEGIN
+		(*RETURN 2;*)
+	END funcion;
+
+BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := funcion(int1,b);
+ 	
+END exFun0;

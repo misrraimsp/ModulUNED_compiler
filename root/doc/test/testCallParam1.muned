@@ -1,0 +1,13 @@
+(* ERROR_callParam1: argumento no declarado *)
+MODULE callParam1;
+
+VAR a:INTEGER;
+	b:BOOLEAN;
+
+	PROCEDURE subprograma (VAR a1:INTEGER; VAR b1:BOOLEAN);
+	 	BEGIN
+ 		END subprograma;
+ 		
+ 	BEGIN
+ 	subprograma(b,c);	(*error*)
+ 	END callParam1;

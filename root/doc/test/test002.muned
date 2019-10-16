@@ -1,0 +1,13 @@
+
+MODULE test002;
+
+VAR a:INTEGER;
+	b:BOOLEAN;
+
+ 		
+BEGIN
+ 	
+ 	a := 1 + 2;
+ 	b := true;
+ 	
+END test002;

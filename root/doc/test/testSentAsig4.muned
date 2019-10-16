@@ -1,0 +1,21 @@
+(* ERROR_sentAsig4: el id del registro no ha sido declarado *)
+MODULE sentAsig4;
+
+TYPE
+	persona=	RECORD 
+	                	edad   : INTEGER; 
+	            		dni    : INTEGER; 
+	                	casado : BOOLEAN;
+					END;
+
+VAR
+	suma:	INTEGER;
+	a1:		INTEGER;
+	b1:		INTEGER;
+	pedro: persona;
+ 	
+BEGIN
+
+	luis.edad := 2; (*error*)
+ 		
+END sentAsig4;

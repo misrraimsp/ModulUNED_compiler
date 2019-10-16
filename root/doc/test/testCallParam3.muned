@@ -1,0 +1,20 @@
+(* ERROR_callParam3: se usa como argumento registro una variable de tipo simple *)
+MODULE callParam3;
+
+TYPE
+persona =	RECORD 
+                   		edad   : INTEGER; 
+                    	dni    : INTEGER; 
+                    	casado : BOOLEAN; 
+        		END;
+
+VAR a:INTEGER;
+	paco:persona;
+	
+	PROCEDURE subprograma (VAR a1:INTEGER; VAR c1:INTEGER);
+	 	BEGIN
+ 		END subprograma;
+ 		
+ 	BEGIN
+ 	subprograma(paco.edad,a.edad);	(*error*)
+ 	END callParam3;

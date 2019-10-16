@@ -1,0 +1,12 @@
+(* ERROR_sentAsig3: el tipo de la variable/parametro de destino de la asignacion no coincide con el tipo de la expresion *)
+MODULE sentAsig3;
+
+VAR
+	suma:	INTEGER;
+	logico: BOOLEAN;
+ 	
+BEGIN
+
+	suma := logico; (*error*)
+ 		
+END sentAsig3;

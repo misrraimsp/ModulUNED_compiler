@@ -1,0 +1,15 @@
+(* ERROR_exNot1: expresion NOT con expresion entera como argumento *)
+MODULE exNot1;
+
+VAR a:INTEGER;
+	b:BOOLEAN;
+	c:BOOLEAN;
+
+ 		
+ 	BEGIN
+ 	
+ 	b := true;
+ 	c := NOT b;
+ 	c := NOT a;	(*error*)
+ 	
+ 	END exNot1;

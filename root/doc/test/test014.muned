@@ -1,0 +1,11 @@
+MODULE test014;
+    
+  VAR	a:boolean;
+  		b:boolean;
+  
+  BEGIN
+
+	a := true;
+    b := true and a;
+
+  END test014;

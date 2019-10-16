@@ -1,0 +1,12 @@
+(* ERROR_const1: id de constante repetido *)
+MODULE const1;
+
+ CONST A = 10;	(*error*)
+	B = 20;
+	C = TRUE;
+	cCc = FALSE;
+	a = 22;	(*error*)
+
+  BEGIN
+
+  END const1;

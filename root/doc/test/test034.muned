@@ -1,0 +1,59 @@
+MODULE test034;
+
+VAR x:INTEGER;
+
+PROCEDURE procA (VAR a:INTEGER);
+
+	VAR vA:integer;
+
+	PROCEDURE procAa (VAR a:INTEGER);
+	
+		VAR vAa:integer;
+	
+		PROCEDURE procAa1 (VAR a:INTEGER);
+		
+			VAR vAa1:integer;
+		
+		BEGIN
+			
+			vAa1:=1;
+			writestring("vAa1:");
+			writeint(vAa1);
+			writestring("vAa:");
+			writeint(vAa);
+			writestring("vA:");
+			writeint(vA);
+			writestring("a:");
+			writeint(a);
+			writestring("x:");
+			writeint(x);
+			a := a/2;
+			writestring("a:");
+			writeint(a);
+			writestring("x:");
+			writeint(x);
+		
+		END procAa1;
+			
+	BEGIN
+	
+		vAa:=10;
+		procAa1(a);
+		
+	END procAa;
+	
+BEGIN
+	
+	vA:=100;
+	procAa(a);
+		
+END procA;
+
+BEGIN
+
+	x := 1000;
+	procA(x);
+	writestring("FIN");
+	writeint(x);
+ 	
+END test034;

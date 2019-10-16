@@ -1,0 +1,15 @@
+(* ERROR_exDiv1: division con expresion booleana en numerador *)
+MODULE exDiv1;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	div:INTEGER;
+	b:BOOLEAN;
+
+ 		
+ 	BEGIN
+ 	
+ 	div := int1/int2;
+ 	div := b/int2;	(*error*)
+ 	
+ 	END exDiv1;

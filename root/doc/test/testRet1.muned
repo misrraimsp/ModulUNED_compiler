@@ -1,0 +1,20 @@
+(* ERROR_ret1: la funcion no tiene sentencia RETURN *)
+MODULE ret1;
+
+PROCEDURE funcion1 (VAR a1:INTEGER; VAR b1:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN 2;
+		
+	END funcion1;
+
+PROCEDURE funcion2 (VAR a1:INTEGER; VAR b1:BOOLEAN):INTEGER;
+	BEGIN
+	
+		(*error*)
+		
+	END funcion2;
+
+BEGIN
+ 	
+END ret1;

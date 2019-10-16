@@ -1,0 +1,41 @@
+MODULE test033;
+
+VAR x:INTEGER;
+
+PROCEDURE procA (VAR a:INTEGER);
+
+	VAR vA:integer;
+
+	PROCEDURE procAa (VAR a:INTEGER);
+	
+		VAR vAa:integer;
+	
+		PROCEDURE procAa1 (VAR a:INTEGER);
+		
+			VAR vAa1:integer;
+		
+		BEGIN
+	
+			a := a/2;
+		
+		END procAa1;
+			
+	BEGIN
+	
+		procAa1(a);
+		
+	END procAa;
+	
+BEGIN
+	
+	procAa(a);
+		
+END procA;
+
+BEGIN
+
+	x := 100;
+	procA(x);
+	writeint(x);
+ 	
+END test033;

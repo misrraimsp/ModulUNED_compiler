@@ -1,0 +1,69 @@
+MODULE test018;
+
+VAR x:INTEGER;
+	b:boolean;
+	y:integer;
+	z:integer;
+	r:integer;
+
+PROCEDURE fun1 (VAR a:INTEGER; VAR b:BOOLEAN; VAR c:integer; VAR d:integer):INTEGER;
+	BEGIN
+	
+		if b then
+			writestring("incremento:");
+			writeint(c);
+			a := a + c;
+		else
+			writestring("incremento:");
+			writeint(d);
+			a := a + d;
+		end;	
+		return (c + d);
+		
+	END fun1;
+	
+	
+	PROCEDURE proc1 (VAR a:INTEGER; VAR b:BOOLEAN);
+	BEGIN
+	
+		if (not b) then
+			writestring("b es falso");
+		else
+			writestring("b es verdadero");
+		end;
+		writeint(a);
+		
+	END proc1;
+
+BEGIN
+
+	writestring("INICIO");
+	b:=true;
+	x := 1;
+	y:= 100;
+	z:=50;
+	r:=0;
+	writestring("x vale:");
+	writeint(x);
+	writestring("y vale:");
+	writeint(y);
+	writestring("z vale:");
+	writeint(z);
+	writestring("r vale:");
+	writeint(r);
+	
+	writestring("MEDIO");
+	r:=fun1(x, b, y, z);
+	writestring("FIN");
+	writestring("x vale:");
+	writeint(x);
+	writestring("y vale:");
+	writeint(y);
+	writestring("z vale:");
+	writeint(z);
+	writestring("r vale:");
+	writeint(r);
+	
+	proc1(x,b);
+ 	
+END test018;

@@ -1,0 +1,12 @@
+(* sin problemas *)
+MODULE const0;
+
+ CONST A = 10;
+	B = 20;
+	C = TRUE;
+	cCc = FALSE;
+	ab = 22;
+
+  BEGIN
+
+  END const0;

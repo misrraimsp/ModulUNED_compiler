@@ -1,0 +1,30 @@
+(* ERROR_exFun5: llamada a funcion de ambito superior *)
+MODULE exFun5;
+
+VAR x:integer;
+
+PROCEDURE fun1(var a:integer):integer;
+
+	PROCEDURE fun2(var a:integer):integer;
+	
+	BEGIN
+		
+		a:=a+1;
+		return fun1(a);		(*error*)
+		
+	END fun2;
+	
+BEGIN
+	
+	writeint(a);
+	a:=fun2(a);
+		
+END fun1;
+
+
+BEGIN
+
+	x:=0;
+	x:=fun1(x)+1;
+ 	
+END exFun5;

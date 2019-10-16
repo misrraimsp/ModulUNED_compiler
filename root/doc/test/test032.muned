@@ -1,0 +1,30 @@
+MODULE test032;
+
+VAR x:integer;
+
+PROCEDURE proc1();
+
+	PROCEDURE proc2();
+	
+	BEGIN
+		
+		writeint(x);
+		x:=99;
+		
+	END proc2;
+	
+BEGIN
+	
+	writeint(x+1);
+	proc2();
+		
+END proc1;
+
+
+BEGIN
+
+	x:=10;
+	proc1();
+	writeint(x);
+ 	
+END test032;

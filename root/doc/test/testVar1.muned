@@ -1,0 +1,21 @@
+(* ERROR_var1: variable con id usado por otro simbolo en mismo ambito *)
+MODULE var1;
+		
+TYPE Persona = 	RECORD
+				edad   : INTEGER;
+				dni    : INTEGER;
+				casado : BOOLEAN; 
+                END; 
+
+VAR		a:INTEGER;	(*error*)
+		b:INTEGER;
+		bool1 : BOOLEAN;
+		bool2 : BOOLEAN;
+		juan : Persona;
+		maria : Persona;
+		A : Persona;	(*error*)
+
+BEGIN
+
+	    
+END var1;

@@ -1,0 +1,26 @@
+(* ERROR_ret4: sentencia RETURN no devolviendo el tipo esperado *)
+MODULE ret4;
+
+PROCEDURE fun1 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN a;
+		
+	END fun1;
+	
+PROCEDURE fun2 (VAR c:INTEGER; VAR d:BOOLEAN):INTEGER;
+	BEGIN
+	
+		IF d THEN
+			c:=c+1;
+			RETURN d;	(*error*)
+		ELSE
+			c:=20;
+			RETURN d;	(*error*)
+		END;
+		
+	END fun2;
+
+BEGIN
+ 	
+END ret4;

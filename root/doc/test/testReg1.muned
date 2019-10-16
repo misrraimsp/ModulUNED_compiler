@@ -1,0 +1,33 @@
+(* ERROR_reg1: nombre de tipo repetido *)
+MODULE reg1;
+
+TYPE
+ 
+A =	RECORD	(*error*)
+
+	edad   : INTEGER;
+	dni    : INTEGER;
+	casado : BOOLEAN;
+	
+	END;
+
+B =	RECORD
+
+	edad   : INTEGER;
+	dni    : INTEGER;
+	dnibool    : BOOLEAN;
+	casado : BOOLEAN;
+	
+	END;
+        		
+a =	RECORD	(*error*)
+
+	edad   : INTEGER;
+	dni    : INTEGER;
+	casado : BOOLEAN;
+	
+	END;
+
+BEGIN
+
+END reg1;

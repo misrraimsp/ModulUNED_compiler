@@ -1,0 +1,18 @@
+(* ERROR_exDist1: DISTINTO con expresiones de diferente tipo *)
+MODULE exDist1;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	b1:BOOLEAN;
+	b2:BOOLEAN;
+	distinto:BOOLEAN;
+
+ 		
+ 	BEGIN
+ 	
+ 	distinto := int1 <> int2;
+ 	distinto := b1 <> b2;
+ 	distinto := int1 <> b2;	(*error*)
+ 	distinto := b1 <> int2;	(*error*)
+ 	
+ 	END exDist1;

@@ -1,0 +1,18 @@
+MODULE test012;
+    
+VAR	a:INTEGER;
+  
+BEGIN
+
+	WRITESTRING("Hola,");
+	WRITESTRING("mi edad es: ");
+	a := 31;
+    WRITEINT(a);
+    WRITESTRING("ciclos.");
+    WRITELN;
+    WRITESTRING("Naci en:");
+    WRITEINT(1987);
+    WRITELN;
+    WRITESTRING("Adios!");
+
+END test012;

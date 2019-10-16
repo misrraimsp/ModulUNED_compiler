@@ -1,0 +1,26 @@
+(* ERROR_ret5: sentencia IF bi-rama con RETURN solo en rama THEN *)
+MODULE ret5;
+
+PROCEDURE fun1 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN a;
+		
+	END fun1;
+	
+PROCEDURE fun2 (VAR c:INTEGER; VAR d:BOOLEAN):INTEGER;
+	BEGIN
+	
+		IF d THEN
+			c:=c+1;
+			RETURN c;
+		ELSE
+			c:=20;
+			(*error*)
+		END;
+		
+	END fun2;
+
+BEGIN
+ 	
+END ret5;

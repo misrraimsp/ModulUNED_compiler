@@ -1,0 +1,21 @@
+(* ERROR_tipo2: variables con tipos no declarados *)
+MODULE tipo2;
+		
+TYPE Persona = 	RECORD
+				edad   : INTEGER;
+				dni    : INTEGER;
+				casado : BOOLEAN; 
+                END; 
+
+VAR		a:INTEGER;
+		b:INTEGER;
+		bool1 : BOOLEAN;
+		bool2 : BOOLEAN;
+		juan : Persona;
+		maria : Persona;
+		pedro : musico;	(*error*)
+
+BEGIN
+
+	    
+END tipo2;

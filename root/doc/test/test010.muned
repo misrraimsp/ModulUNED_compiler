@@ -1,0 +1,23 @@
+MODULE test010;
+    
+VAR a1:INTEGER;
+	a2:integer;
+  	b:BOOLEAN;
+  
+BEGIN
+    
+    b := false;
+    
+	IF b THEN
+		a1 := 27;
+	ELSE
+	
+	END;
+	
+	IF NOT b THEN
+		a2 := 27;
+	ELSE
+	
+	END;
+	    
+END test010;

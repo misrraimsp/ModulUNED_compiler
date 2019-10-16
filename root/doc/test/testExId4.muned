@@ -1,0 +1,19 @@
+(* ERROR_exId4: se usa como expresion el ID de una variable de tipo registro sin especificar campo *)
+MODULE exId4;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	pedro:persona;
+
+BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := pedro;	(*error*)
+ 	
+END exId4;

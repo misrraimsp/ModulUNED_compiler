@@ -1,0 +1,15 @@
+(* ERROR_exAnd1: AND con expresion entera en primer operando *)
+MODULE exAnd1;
+
+VAR int:INTEGER;
+	b1:BOOLEAN;
+	b2:BOOLEAN;
+	band:BOOLEAN;
+
+ 		
+ 	BEGIN
+ 	
+ 	band := b1 and b2;
+ 	band := int and b2;	(*error*)
+ 	
+ 	END exAnd1;

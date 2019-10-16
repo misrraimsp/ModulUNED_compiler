@@ -1,0 +1,19 @@
+(* ERROR_exReg2: se usa como expresion el acceso al campo de un ID que no se ha declarado como registro *)
+MODULE exReg2;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	pedro:persona;
+
+BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := int2.edad;	(*error*)
+ 	
+END exReg2;

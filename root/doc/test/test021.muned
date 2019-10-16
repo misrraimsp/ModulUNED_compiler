@@ -1,0 +1,24 @@
+MODULE test021;
+
+VAR x:INTEGER;
+	y:INTEGER;
+
+PROCEDURE incrementa (VAR a:INTEGER):INTEGER;
+	
+BEGIN
+	
+	a := a + 1;
+	RETURN a;
+		
+END incrementa;
+
+BEGIN
+
+	x := 12;
+	writeint(x);
+	
+	y := incrementa(x);
+	writeint(x);
+	writeint(y);
+ 	
+END test021;

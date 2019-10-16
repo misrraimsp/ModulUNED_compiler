@@ -1,0 +1,22 @@
+(* ERROR_exId5: se usa como expresion el ID de un parametro de tipo registro sin especificar campo *)
+MODULE exId5;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR pedro:persona;
+	laura:persona;
+
+PROCEDURE subproceso (VAR c:persona);
+	 	BEGIN
+	 		pedro.edad := c;	(*error*)
+ 		END subproceso;
+
+BEGIN
+ 	
+ 	subproceso(laura);
+ 	
+END exId5;

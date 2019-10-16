@@ -1,0 +1,18 @@
+MODULE test022;
+
+VAR x:INTEGER;
+
+PROCEDURE once():INTEGER;
+	
+BEGIN
+	
+	RETURN 11;
+		
+END once;
+
+BEGIN
+
+	x := 99;
+	x := once;
+ 	
+END test022;

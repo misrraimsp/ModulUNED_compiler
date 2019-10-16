@@ -1,0 +1,13 @@
+MODULE test011;
+    
+VAR a:INTEGER;
+  	b:BOOLEAN;
+  
+BEGIN
+    
+    b := false;
+	IF NOT b THEN
+		a := 57;
+	END;
+	    
+END test011;

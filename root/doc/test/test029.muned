@@ -1,0 +1,31 @@
+MODULE test029;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR paco:persona;
+
+PROCEDURE pasarVida(VAR p:persona);
+	
+BEGIN
+	
+	if (p.edad < 100) then
+		p.edad:=p.edad+10;
+		WRITEINT(p.edad);
+		pasarVida(p);
+	else
+		writestring("byebye");
+	end;
+		
+END pasarVida;
+
+
+BEGIN
+
+	paco.edad:=0;
+	pasarVida(paco);
+ 	
+END test029;

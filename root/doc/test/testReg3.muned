@@ -1,0 +1,33 @@
+(* ERROR_reg3: nombre de campos repetidos *)
+MODULE reg3;
+
+TYPE
+ 
+A =	RECORD
+
+	edad   : INTEGER;
+	dni    : INTEGER;
+	casado : BOOLEAN;
+	
+	END;
+
+B =	RECORD
+
+	edad   : INTEGER;
+	dni    : INTEGER;	(*error*)
+	DNI    : BOOLEAN;	(*error*)
+	casado : BOOLEAN;
+	
+	END;
+        		
+Ab =	RECORD
+
+	edad   : INTEGER;
+	dni    : INTEGER;
+	casado : BOOLEAN;
+	
+	END;
+
+BEGIN
+
+END reg3;

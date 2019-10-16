@@ -1,0 +1,13 @@
+MODULE test015;
+    
+VAR	b1:boolean;
+	b2:boolean;
+	b3:boolean;
+  
+BEGIN
+
+    b1 := 3 < 4;
+    b2 := 3 <> 3;
+    b3 := b1 and (NOT b2);
+
+END test015;

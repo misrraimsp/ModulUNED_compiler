@@ -1,0 +1,29 @@
+(* ERROR_sub2: identificador de subprograma usado por tipo en mismo ambito *)
+MODULE sub2;
+
+	TYPE
+	Persona =	RECORD	(*error*)
+	                	edad   : INTEGER; 
+	            		dni    : INTEGER; 
+	                	casado : BOOLEAN;
+					END;
+
+	VAR
+	suma:	INTEGER;
+	a1:		INTEGER;
+	b1:		INTEGER;
+	bool:	BOOLEAN;
+	c1:		persona;
+	subprograma:	INTEGER;
+	  
+	PROCEDURE persona (VAR a: INTEGER; VAR b: INTEGER; VAR c: persona) : INTEGER;	(*error*)
+	  	VAR
+	  	s: INTEGER;
+	  	
+	 	BEGIN
+	 	
+ 		END persona;
+ 	
+ 	BEGIN
+ 	
+ 	END sub2;

@@ -1,0 +1,15 @@
+MODULE test024;
+
+PROCEDURE escribeSiete();
+	
+BEGIN
+	
+	WRITEINT(7);
+		
+END escribeSiete;
+
+BEGIN
+
+	escribeSiete;
+ 	
+END test024;

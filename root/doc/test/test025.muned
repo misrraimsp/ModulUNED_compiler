@@ -1,0 +1,30 @@
+MODULE test025;
+
+VAR x:INTEGER;
+
+PROCEDURE incrementa(VAR a:INTEGER);
+	
+BEGIN
+	
+	if (a<10) then
+		a:=a+1;
+		WRITESTRING("llamada a incrementa");
+		WRITESTRING("x:");
+		WRITEINT(a);
+		incrementa(a);
+	end;
+		
+END incrementa;
+
+BEGIN
+
+	x:=0;
+	WRITESTRING("empieza la ejecucion");
+	WRITESTRING("x:");
+	WRITEINT(x);
+	incrementa(x);
+	WRITESTRING("final de la ejecucion");
+	WRITESTRING("x:");
+	WRITEINT(x);
+ 	
+END test025;

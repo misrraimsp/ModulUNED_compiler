@@ -1,0 +1,20 @@
+(* sin problemas *)
+MODULE var0;
+		
+TYPE Persona = 	RECORD
+				edad   : INTEGER;
+				dni    : INTEGER;
+				casado : BOOLEAN; 
+                END; 
+
+VAR		a:INTEGER;
+		b:INTEGER;
+		bool1 : BOOLEAN;
+		bool2 : BOOLEAN;
+		juan : Persona;
+		maria : Persona;
+
+BEGIN
+
+	    
+END var0;

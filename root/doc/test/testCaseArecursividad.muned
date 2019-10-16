@@ -1,0 +1,68 @@
+MODULE vector;
+
+  TYPE VECTOR = RECORD 
+  	x   : INTEGER; 
+	y   : INTEGER;
+END; 
+
+  VAR 	v, w:VECTOR;
+  
+  
+  PROCEDURE mayorque(VAR v1, v2:VECTOR):BOOLEAN;
+  
+  	VAR mod1, mod2 :INTEGER;
+  	
+  	PROCEDURE modulo(VAR v:VECTOR):INTEGER;
+  	
+  		PROCEDURE cuadrado(VAR x:INTEGER):INTEGER;
+  		
+  			VAR i, res:INTEGER;
+  			
+  			PROCEDURE aux;
+  			BEGIN
+  				IF i<x THEN
+  					i := i +1;
+  					res := res + x;
+  					aux;
+  				END;
+  			END aux;
+  			
+  		BEGIN
+  			i := 0;
+  			res := 0;
+  			aux;
+  			RETURN res;
+  		END cuadrado;
+  		
+  	BEGIN
+  		RETURN cuadrado(v.x) + cuadrado(v.y);
+  	END modulo;
+  BEGIN
+  	mod1 := modulo(v1);
+  	
+  	
+  	mod2 := modulo(v2);
+  	WRITEINT(mod1);
+  	WRITELN;
+  	WRITEINT(mod2);
+  	WRITELN;
+  	RETURN mod2<mod1;
+  	
+  END mayorque;
+  
+  BEGIN
+    v.x := 2;
+    v.y := 4;
+    
+    w.x := 4;
+    w.y := 2;
+    
+    
+    IF mayorque(v, w) THEN WRITESTRING("ES MAYOR ");  	
+  	ELSE IF mayorque(w, v) THEN WRITESTRING("ES MENOR ");
+  		ELSE WRITESTRING("SON IGUALES");
+  		END;
+  	END;
+  
+    
+  END vector;

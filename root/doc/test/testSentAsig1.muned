@@ -1,0 +1,13 @@
+(* ERROR_sentAsig1: el id de destino de la asignacion no ha sido declarado *)
+MODULE sentAsig1;
+
+VAR
+	suma:	INTEGER;
+	a1:		INTEGER;
+	b1:		INTEGER;
+ 	
+BEGIN
+
+	nodeclarado:=2; (*error*)
+ 		
+END sentAsig1;

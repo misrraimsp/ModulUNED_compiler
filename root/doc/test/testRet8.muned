@@ -1,0 +1,29 @@
+(* ERROR_ret8: varias sentencias RETURN con distinto tipo de retorno en un mismo ambito *)
+(* el ambito es un procedimiento *)
+MODULE ret8;
+
+PROCEDURE fun1 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN a;
+		
+	END fun1;
+	
+PROCEDURE proc1 (VAR c:INTEGER; VAR d:BOOLEAN);
+	BEGIN
+	
+		IF d THEN	(*error*)
+			c:=c+1;
+			RETURN c;
+		ELSE
+			c:=20;
+			RETURN c;
+		END;
+		
+		RETURN d;	(*error*)
+		
+	END proc1;
+
+BEGIN
+ 	
+END ret8;

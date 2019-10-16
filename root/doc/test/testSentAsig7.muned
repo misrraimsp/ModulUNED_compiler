@@ -1,0 +1,20 @@
+(* ERROR_sentAsig7: el tipo del campo del registro y de la expresion no coinciden *)
+MODULE sentAsig7;
+
+TYPE
+	persona=	RECORD 
+	                	edad   : INTEGER; 
+	            		dni    : INTEGER; 
+	                	casado : BOOLEAN;
+					END;
+
+VAR
+	pedro: persona;
+	matrimonio: BOOLEAN;
+ 	
+BEGIN
+
+	pedro.casado := matrimonio;
+	pedro.edad := matrimonio; (*error*)
+ 		
+END sentAsig7;

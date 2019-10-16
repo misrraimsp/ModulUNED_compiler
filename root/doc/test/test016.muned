@@ -1,0 +1,13 @@
+MODULE test016;
+    
+VAR	a:INTEGER;
+  
+BEGIN
+
+	a := 0;
+    WHILE 10 <> a DO
+    	WRITEINT(a);
+    	a := a + 1;
+    END;
+
+END test016;

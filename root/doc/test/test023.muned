@@ -1,0 +1,15 @@
+MODULE test023;
+
+PROCEDURE seisseis():INTEGER;
+	
+BEGIN
+	
+	RETURN 66;
+		
+END seisseis;
+
+BEGIN
+
+	WRITEINT(seisseis);
+ 	
+END test023;

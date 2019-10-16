@@ -1,0 +1,20 @@
+(* ERROR_ret3: sentencia RETURN usada en el ambito global *)
+MODULE ret3;
+
+PROCEDURE proc1 (VAR a1:INTEGER; VAR b1:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN 1 + 1;
+		
+	END proc1;
+	
+PROCEDURE proc2 (VAR a1:INTEGER; VAR b1:BOOLEAN);
+	BEGIN
+		
+	END proc2;
+
+BEGIN
+ 	
+ 	RETURN 2; (*error*)
+ 	
+END ret3;

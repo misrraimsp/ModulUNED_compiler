@@ -1,0 +1,10 @@
+MODULE test00;
+
+VAR a:INTEGER;
+		
+BEGIN
+ 	
+ 	a := 99;
+
+ 	
+END test00;

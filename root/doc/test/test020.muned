@@ -1,0 +1,68 @@
+MODULE test020;
+
+VAR x:INTEGER;
+
+PROCEDURE fun1 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+
+	PROCEDURE fun11 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	
+		PROCEDURE fun111 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+		BEGIN
+	
+			a := a + 2;
+			RETURN a;
+		
+		END fun111;
+			
+	BEGIN
+	
+		a := a + 2;
+		RETURN a;
+		
+	END fun11;
+	
+	PROCEDURE fun12 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	
+		PROCEDURE fun121 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+		BEGIN
+	
+			a := a + 2;
+			RETURN a;
+		
+		END fun121;
+			
+	BEGIN
+	
+		a := a + 2;
+		RETURN a;
+		
+	END fun12;
+	
+BEGIN
+	
+	a := a + 2;
+	RETURN a;
+		
+END fun1;
+	
+PROCEDURE fun2 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+
+	PROCEDURE fun22 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	BEGIN
+	
+		a := a + 2;
+		RETURN a;
+		
+	END fun22;
+BEGIN
+	
+	a := a + 2;
+	RETURN a;
+		
+END fun2;
+
+BEGIN
+
+	x := 1;
+ 	
+END test020;

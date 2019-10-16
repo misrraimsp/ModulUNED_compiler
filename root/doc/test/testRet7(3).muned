@@ -1,0 +1,19 @@
+(* ERROR_ret7: sentencia IF bi-rama con RETURN de diferente tipo de retorno en cada rama *)
+(* se detecta ERROR_ret7 aunque el RETURN este en el ambito global (ERROR_ret3) *)
+(* se detecta antes ERROR_ret7 que ERROR_ret3 *)
+MODULE ret7;
+
+VAR d:BOOLEAN;
+	c:INTEGER;
+	
+BEGIN
+	
+	IF d THEN
+		c:=c+1;
+		RETURN d;	(*error*)
+	ELSE
+		c:=20;
+		RETURN c;	(*error*)
+	END;
+		
+END ret7;

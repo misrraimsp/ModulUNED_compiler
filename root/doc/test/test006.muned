@@ -1,0 +1,24 @@
+
+MODULE test006;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR a:INTEGER;
+	b:BOOLEAN;
+	c:BOOLEAN;
+	paco:persona;
+
+ 		
+BEGIN
+ 	
+ 	a := 11 + 2;
+ 	b := true;
+ 	c := NOT b;
+ 	paco.casado := c;
+ 	paco.edad := a + 50;
+ 	
+END test006;

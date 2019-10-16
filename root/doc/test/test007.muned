@@ -1,0 +1,21 @@
+MODULE test007;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR 
+	paco:persona;
+	luis:persona;
+	alberto:persona;
+
+ 		
+BEGIN
+
+ 	paco.edad := 15;
+ 	luis.edad := paco.edad + 20;
+ 	alberto.edad := 90;
+ 	
+END test007;

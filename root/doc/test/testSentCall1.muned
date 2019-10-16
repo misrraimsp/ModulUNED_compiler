@@ -1,0 +1,10 @@
+(* ERROR_sentCall1: identificador de procedimiento no declarado *)
+MODULE sentCall1;
+
+	PROCEDURE subprograma ();
+	 	BEGIN
+ 		END subprograma;
+ 		
+ 	BEGIN
+ 	otroSubprograma(); (*error*)
+ 	END sentCall1;

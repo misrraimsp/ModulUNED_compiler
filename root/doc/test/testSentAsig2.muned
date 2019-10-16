@@ -1,0 +1,22 @@
+(* ERROR_sentAsig2: el id de destino de la asignacion ha sido declarado pero no es ni una variable ni un parametro *)
+MODULE sentAsig2;
+
+VAR
+	suma:	INTEGER;
+	a1:		INTEGER;
+	b1:		INTEGER;
+ 	
+ 	PROCEDURE Sumar (VAR a: INTEGER; VAR b: INTEGER) : INTEGER;
+	  	VAR
+	  	s: INTEGER;
+	  	
+	 	BEGIN
+ 			suma := a+b;
+ 			RETURN s; 	
+ 		END Sumar;
+ 	
+BEGIN
+
+	SUMAR := 2; (*error*)
+ 		
+END sentAsig2;

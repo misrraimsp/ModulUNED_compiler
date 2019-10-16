@@ -1,0 +1,15 @@
+MODULE test009;
+    
+VAR a:INTEGER;
+  	b:BOOLEAN;
+  
+BEGIN
+    
+    b := 2 < 4;
+	IF b THEN
+		a := 11;
+	ELSE
+		a := 22;
+	END;
+	    
+END test009;

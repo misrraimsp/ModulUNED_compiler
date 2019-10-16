@@ -1,0 +1,20 @@
+(* ERROR_ret2: sentencia RETURN en el contexto de un procedimiento *)
+MODULE ret2;
+
+PROCEDURE proc1 (VAR a1:INTEGER; VAR b1:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN 1 + 1;
+		
+	END proc1;
+	
+PROCEDURE proc2 (VAR a1:INTEGER; VAR b1:BOOLEAN);
+	BEGIN
+	
+		RETURN 2; (*error*)
+		
+	END proc2;
+
+BEGIN
+ 	
+END ret2;

@@ -1,0 +1,28 @@
+(* ERROR_exId6: llamada a funcion de ambito superior *)
+MODULE exId6;
+
+VAR x:integer;
+
+PROCEDURE fun1():integer;
+
+	PROCEDURE fun2():integer;
+	
+	BEGIN
+		
+		return fun1;		(*error*)
+		
+	END fun2;
+	
+BEGIN
+	
+	return fun2;
+		
+END fun1;
+
+
+BEGIN
+
+	x:=0;
+	x:=fun1 + 1;
+ 	
+END exId6;

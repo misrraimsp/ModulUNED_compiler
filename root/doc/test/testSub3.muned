@@ -1,0 +1,28 @@
+(* ERROR_sub4: id de parametros de subprograma ya declarado en ambito local *)
+MODULE sub4;
+
+	TYPE
+	Persona =	RECORD
+	                	edad   : INTEGER; 
+	            		dni    : INTEGER; 
+	                	casado : BOOLEAN;
+					END;
+
+	VAR
+	suma:	INTEGER;
+	a1:		INTEGER;
+	b1:		INTEGER;
+	bool:	BOOLEAN;
+	c1:		persona;
+	  
+	PROCEDURE subprograma (VAR a: INTEGER; VAR A: INTEGER; VAR c: persona) : INTEGER;	(*error*)
+	  	VAR
+	  	s: INTEGER;
+	  	
+	 	BEGIN
+
+ 		END subprograma;
+ 	
+ 	BEGIN
+
+ 	END sub4;

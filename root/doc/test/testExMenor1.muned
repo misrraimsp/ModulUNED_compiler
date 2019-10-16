@@ -1,0 +1,15 @@
+(* ERROR_exMenor1: MENOR con expresion booleana en primer operando *)
+MODULE exMenor1;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	menor:BOOLEAN;
+	b:BOOLEAN;
+
+ 		
+ 	BEGIN
+ 	
+ 	menor := int1 < int2;
+ 	menor := b < int2;	(*error*)
+ 	
+ 	END exMenor1;

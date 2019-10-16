@@ -1,0 +1,21 @@
+(* ERROR_callParam4: el argumento registro no tiene el campo referenciado *)
+MODULE callParam4;
+
+TYPE
+ 
+persona =	RECORD 
+                   		edad   : INTEGER; 
+                    	dni    : INTEGER; 
+                    	casado : BOOLEAN; 
+        		END;
+
+VAR a:INTEGER;
+	paco:persona;
+	
+	PROCEDURE subprograma (VAR a1:INTEGER; VAR c1:INTEGER);
+	 	BEGIN
+ 		END subprograma;
+ 		
+ 	BEGIN
+ 	subprograma(paco.altura,a);	(*error*)
+ 	END callParam4;

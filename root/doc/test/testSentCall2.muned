@@ -1,0 +1,19 @@
+(* ERROR_sentCall2: el identificador de la llamada no es de un procedimiento *)
+MODULE sentCall2;
+
+VAR a : INTEGER;
+
+	PROCEDURE funcion ():BOOLEAN;
+	 	BEGIN
+	 	return true;
+ 		END funcion;
+
+	PROCEDURE subprograma ();	
+	 	BEGIN
+ 		END subprograma;
+ 		
+ 	BEGIN
+ 	a(); (*error*)
+ 	funcion(); (*error*)
+ 	subprograma();
+ 	END sentCall2;

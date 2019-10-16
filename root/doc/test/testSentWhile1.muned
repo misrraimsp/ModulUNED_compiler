@@ -1,0 +1,15 @@
+(* ERROR_sentWhile1: la expresion de control no es booleana *)
+MODULE sentWhile1;
+    
+  VAR a:INTEGER;
+  		b:BOOLEAN;
+  
+  
+  BEGIN
+   
+	WHILE (a) DO	(*error*)
+		a := a+1;
+	END;    
+
+	    
+END sentWhile1;

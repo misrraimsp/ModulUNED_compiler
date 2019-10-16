@@ -1,0 +1,9 @@
+MODULE test013;
+    
+  VAR	a:INTEGER;
+  
+  BEGIN
+
+    a := 10 / 2;
+
+  END test013;

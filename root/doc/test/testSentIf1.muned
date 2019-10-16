@@ -1,0 +1,15 @@
+(* ERROR_sentIf1: la expresion de control no es booleana *)
+MODULE sentIf1;
+    
+  VAR a:INTEGER;
+  		b:BOOLEAN;
+  
+  BEGIN
+    
+	IF a THEN (*error*)
+		a:=a+1;
+	ELSE
+		a:=20;
+	END;
+	    
+  END sentIf1;

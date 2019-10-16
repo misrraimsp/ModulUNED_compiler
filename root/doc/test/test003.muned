@@ -1,0 +1,15 @@
+
+MODULE test003;
+
+VAR	a:INTEGER;
+	b:BOOLEAN;
+	c:BOOLEAN;
+
+ 		
+BEGIN
+ 	
+ 	a := 99;
+ 	b := false;
+ 	c := NOT b;
+ 	
+END test003;

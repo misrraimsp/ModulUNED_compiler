@@ -1,0 +1,12 @@
+(* ERROR_exId1: se usa un ID como expresion pero este no se ha declarado *)
+MODULE exId1;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+
+ 	BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := int3;	(*error*)
+ 	
+ 	END exId1;

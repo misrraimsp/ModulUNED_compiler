@@ -1,0 +1,25 @@
+MODULE test027;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR x:INTEGER;
+	paco:persona;
+
+PROCEDURE printEdad(VAR p:persona);
+	
+BEGIN
+	
+	WRITEINT(p.edad);
+		
+END printEdad;
+
+BEGIN
+
+	paco.edad:=99;
+	printEdad(paco);
+ 	
+END test027;

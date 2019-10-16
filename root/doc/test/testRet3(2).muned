@@ -1,0 +1,17 @@
+(* ERROR_ret3: sentencia RETURN usada en el ambito global *)
+MODULE ret3;
+
+VAR d:BOOLEAN;
+	c:INTEGER;
+	
+BEGIN
+	
+	IF d THEN
+		c:=c+1;
+		RETURN d;	(*error*)
+	ELSE
+		c:=20;
+		RETURN d;	(*error*)
+	END;
+		
+END ret3;

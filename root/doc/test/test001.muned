@@ -1,0 +1,13 @@
+
+MODULE test001;
+
+CONST a = 1;
+
+VAR b:INTEGER;
+
+ 		
+BEGIN
+ 	
+ 	b := 6 + a;
+ 	
+END test001;

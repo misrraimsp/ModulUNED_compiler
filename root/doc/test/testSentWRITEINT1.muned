@@ -1,0 +1,11 @@
+(* ERROR_sentWRITEINT1: el parametro no es una expresion de tipo entero *)
+MODULE sentWRITEINT1;
+    
+  VAR	a:INTEGER;
+  		b:BOOLEAN;
+  
+  BEGIN
+    
+    WRITEINT(b); (*error*)
+	    
+  END sentWRITEINT1;

@@ -1,0 +1,17 @@
+(* ERROR_exFun3: se usa como expresion la llamada a una funcion con un numero errado de argumentos *)
+MODULE exFun3;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+
+PROCEDURE funcion (VAR a1:INTEGER; VAR b1:BOOLEAN):INTEGER;
+	BEGIN
+		return 1;
+	END funcion;
+
+BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := funcion(int2);	(*error*)
+ 	
+END exFun3;

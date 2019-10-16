@@ -1,0 +1,28 @@
+(* ERROR_ret7: sentencia IF bi-rama con RETURN de diferente tipo de retorno en cada rama *)
+(* se detecta ERROR_ret7 aunque el RETURN este dentro del ambito de un procedimiento (ERROR_ret2) *)
+(* se detecta antes ERROR_ret7 que ERROR_ret2 *)
+MODULE ret7;
+
+PROCEDURE fun1 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN a;
+		
+	END fun1;
+	
+PROCEDURE proc1 (VAR c:INTEGER; VAR d:BOOLEAN);
+	BEGIN
+	
+		IF d THEN
+			c:=c+1;
+			RETURN d;	(*error*)
+		ELSE
+			c:=20;
+			RETURN c;	(*error*)
+		END;
+		
+	END proc1;
+
+BEGIN
+ 	
+END ret7;

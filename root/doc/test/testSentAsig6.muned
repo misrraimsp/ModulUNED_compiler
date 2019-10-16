@@ -1,0 +1,18 @@
+(* ERROR_sentAsig6: el registro de destino no contiene el campo al que se hace referencia *)
+MODULE sentAsig6;
+
+TYPE
+	persona=	RECORD 
+	                	edad   : INTEGER; 
+	            		dni    : INTEGER; 
+	                	casado : BOOLEAN;
+					END;
+
+VAR
+	pedro: persona;
+ 	
+BEGIN
+
+	pedro.altura := 200; (*error*)
+ 		
+END sentAsig6;

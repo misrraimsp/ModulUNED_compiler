@@ -1,0 +1,13 @@
+(* ERROR_callParam2: el id del argumento no es de una variable *)
+MODULE callParam2;
+
+VAR a:INTEGER;
+	b:BOOLEAN;
+
+	PROCEDURE subprograma (VAR a1:INTEGER; VAR b1:BOOLEAN);
+	 	BEGIN
+ 		END subprograma;
+ 		
+ 	BEGIN
+ 	subprograma(b,subprograma);	(*error*)
+ 	END callParam2;

@@ -1,0 +1,12 @@
+(* ERROR_exFun1: se usa como expresion la llamada a una funcion no declarada *)
+MODULE exFun1;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+
+BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := funcion(int2);	(*error*)
+ 	
+END exFun1;

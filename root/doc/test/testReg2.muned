@@ -1,0 +1,28 @@
+(* ERROR_reg2: nombre de tipo ya usado por otro simbolo en mismo ambito *)
+MODULE reg2;
+
+CONST Ab = 10;
+	B = 20;	(*error*)
+
+TYPE
+ 
+A =	RECORD
+
+	edad   : INTEGER;
+	dni    : INTEGER;
+	casado : BOOLEAN;
+	
+	END;
+
+B =	RECORD	(*error*)
+
+	edad   : INTEGER;
+	dni    : INTEGER;
+	musico    : BOOLEAN;
+	casado : BOOLEAN;
+	
+	END;
+
+BEGIN
+
+END reg2;

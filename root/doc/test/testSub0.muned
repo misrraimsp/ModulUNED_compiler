@@ -1,0 +1,33 @@
+(* sin problemas *)
+MODULE sub0;
+
+	TYPE
+	TipoPersona=	RECORD 
+	                	edad   : INTEGER; 
+	            		dni    : INTEGER; 
+	                	casado : BOOLEAN;
+					END;
+
+	VAR
+	suma:	INTEGER;
+	a1:		INTEGER;
+	b1:		INTEGER;
+	bool:	BOOLEAN;
+	c1:		TipoPersona;
+	  
+	PROCEDURE Sumar (VAR a: INTEGER; VAR b: INTEGER; VAR c: TipoPersona) : INTEGER;
+	  	VAR
+	  	s: INTEGER;
+	  	
+	 	BEGIN
+ 			s := a+b;
+ 			RETURN s; 	
+ 		END Sumar;
+ 	
+ 	BEGIN
+ 		a1:=2;
+ 		b1:=3;
+ 		suma := Sumar(a1,b1,c1);
+ 		WRITESTRING("Suma:");
+ 		WRITEINT(suma);
+ 	END sub0;

@@ -1,0 +1,26 @@
+MODULE test017;
+  
+CONST c = 100;
+    
+VAR	a:INTEGER;
+	b:boolean;
+  
+BEGIN
+
+	a := 0;
+    WHILE (a <> 1000) DO
+    	WRITEINT(a);
+    	a := a + c;
+    END;
+    
+    WRITELN;
+    
+    a := 0;
+    b := true;
+    WHILE (b) DO
+    	WRITEINT(a);
+    	a := a + c;
+    	b := a <> 1000;
+    END;
+
+END test017;

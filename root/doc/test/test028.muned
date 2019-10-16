@@ -1,0 +1,58 @@
+MODULE test028;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR paco:persona;
+
+PROCEDURE printEdad(VAR p:persona);
+	
+BEGIN
+	
+	WRITEINT(p.edad);
+		
+END printEdad;
+
+PROCEDURE cumplirAno(VAR p:persona);
+	
+BEGIN
+	
+	p.edad:=p.edad+1;
+		
+END cumplirAno;
+
+PROCEDURE casarse(VAR p:persona);
+	
+BEGIN
+	
+	p.casado:=true;
+		
+END casarse;
+
+PROCEDURE isCasado(VAR p:persona);
+	
+BEGIN
+	
+	if p.casado then
+		writestring("SI");
+	else
+		writestring("NO");
+	end;
+		
+END isCasado;
+
+BEGIN
+
+	paco.edad:=99;
+	printEdad(paco);
+	paco.casado:=false;
+	isCasado(paco);
+	cumplirAno(paco);
+	printEdad(paco);
+	casarse(paco);
+	isCasado(paco);
+ 	
+END test028;

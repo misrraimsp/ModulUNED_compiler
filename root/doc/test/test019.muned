@@ -1,0 +1,51 @@
+MODULE test019;
+
+VAR x:INTEGER;
+	y:INTEGER;
+	r:integer;
+
+PROCEDURE suma(VAR a:INTEGER; var b:integer):integer;
+
+BEGIN
+	
+	return (a+b);
+		
+END suma;
+
+	
+PROCEDURE uno():INTEGER;
+
+BEGIN
+	
+	RETURN 1;
+		
+END uno;
+
+PROCEDURE imprime(VAR a:INTEGER);
+
+BEGIN
+	
+	WRITESTRING("valor:");
+	writeint(a);
+		
+END imprime;
+
+PROCEDURE despide();
+
+BEGIN
+	
+	WRITESTRING("ADIOS");
+		
+END despide;
+
+BEGIN
+
+	x := uno;
+	y:= uno() + uno;
+	r:=suma(x,y);
+	imprime(x);
+	imprime(y);
+	imprime(r);
+	despide;
+ 	
+END test019;

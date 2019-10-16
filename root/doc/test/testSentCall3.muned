@@ -1,0 +1,13 @@
+(* ERROR_sentCall3: el numero de parametros actuales y formales no coincide *)
+MODULE sentCall3;
+
+VAR a:INTEGER;
+	b:BOOLEAN;
+
+	PROCEDURE subprograma (VAR a1:INTEGER; VAR b1:BOOLEAN);
+	 	BEGIN
+ 		END subprograma;
+ 		
+ 	BEGIN
+ 	subprograma;	(*error*)
+ 	END sentCall3;

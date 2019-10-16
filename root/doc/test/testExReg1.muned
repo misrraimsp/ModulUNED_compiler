@@ -1,0 +1,19 @@
+(* ERROR_exReg1: se usa como expresion el acceso al campo de un registro que no se ha declarado *)
+MODULE exReg1;
+
+TYPE persona =	RECORD 
+                   	edad   : INTEGER; 
+                    dni    : INTEGER; 
+                    casado : BOOLEAN; 
+        		END;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	pedro:persona;
+
+BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := luis.edad;	(*error*)
+ 	
+END exReg1;

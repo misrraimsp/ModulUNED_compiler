@@ -1,0 +1,26 @@
+(* ERROR_ret7: sentencia IF bi-rama con RETURN de diferente tipo de retorno en cada rama *)
+MODULE ret7;
+
+PROCEDURE fun1 (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	BEGIN
+	
+		RETURN a;
+		
+	END fun1;
+	
+PROCEDURE fun2 (VAR c:INTEGER; VAR d:BOOLEAN):INTEGER;
+	BEGIN
+	
+		IF d THEN
+			c:=c+1;
+			RETURN d; (*error*)
+		ELSE
+			c:=20;
+			RETURN c;
+		END;
+		
+	END fun2;
+
+BEGIN
+ 	
+END ret7;

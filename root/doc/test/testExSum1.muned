@@ -1,0 +1,15 @@
+(* ERROR_exSum1: suma con expresion booleana en primer operando *)
+MODULE exSum1;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+	sum:INTEGER;
+	b:BOOLEAN;
+
+ 		
+ 	BEGIN
+ 	
+ 	sum := int1 + int2;
+ 	sum := b + int2;	(*error*)
+ 	
+ 	END exSum1;

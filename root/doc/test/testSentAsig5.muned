@@ -1,0 +1,29 @@
+(* ERROR_sentAsig5: el id del destino debe ser de un registro *)
+MODULE sentAsig5;
+
+CONST constante = 33;
+
+TYPE
+	persona=	RECORD 
+	                	edad   : INTEGER; 
+	            		dni    : INTEGER; 
+	                	casado : BOOLEAN;
+					END;
+
+VAR
+	pedro: persona;
+ 	
+PROCEDURE EDAD(VAR alguien: persona);
+	  	
+	 	BEGIN
+	 	
+	 		constante.edad := 22; (*error*)
+ 			alguien.edad := 33; 
+ 			
+ 		END EDAD; 	
+
+BEGIN
+
+	EDAD(PEDRO);
+ 		
+END sentAsig5;

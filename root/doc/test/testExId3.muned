@@ -1,0 +1,17 @@
+(* ERROR_exId3: se usa como expresion el ID de una funcion sin signatura hueca *)
+MODULE exId3;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+
+PROCEDURE funcion (VAR a:INTEGER; VAR b:BOOLEAN):INTEGER;
+	 	BEGIN
+	 	return 1;
+ 		END funcion;
+
+ 	BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := funcion;	(*error*)
+ 	
+ 	END exId3;

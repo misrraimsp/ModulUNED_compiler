@@ -1,0 +1,16 @@
+(* ERROR_exId2: se usa un ID de un procedimiento como expresion *)
+MODULE exId2;
+
+VAR int1:INTEGER;
+	int2:INTEGER;
+
+PROCEDURE subprograma (VAR a:INTEGER; VAR b:BOOLEAN);
+	 	BEGIN
+ 		END subprograma;
+
+ 	BEGIN
+ 	
+ 	int2 := int1;
+ 	int1 := subprograma;	(*error*)
+ 	
+ 	END exId2;
